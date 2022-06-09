@@ -24,10 +24,13 @@ class Alumno:
                 aprobadas.append(materia)
         for aprobada in aprobadas:
             self.materias.remove(aprobada)
-
-        print("Las materias que tiene pendientes son: " + str(self.materias))
+        if len(self.materias) == 0:
+            print("Todas las materias están aprobadas.")
+        elif len(self.materias) == 1:
+            print("La materia pendiente es: " + str(self.materias))
+        else:
+            print("Las materias pendientes son: " + str(self.materias))
 
 alu = Alumno("Javier", 44332445, 5)
-print(alu.legajo)
 alu.completar_materias()
 alu.registrar_notas()

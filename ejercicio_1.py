@@ -1,4 +1,3 @@
-print("INICIO EJERCICIO 1")
 lista_1 = [1, 2 ,3, 4]
 lista_2 = [3, 4, 5]
 
