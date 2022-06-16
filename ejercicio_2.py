@@ -21,4 +21,4 @@ while c:
     valor = input(clave + ": ")
     persona[clave]= valor
     print(persona)
-    c = input("¿Quiere añadir un nuevo dato? 1-Si / 0-No ") == "1"
+    c = int(input("¿Quiere añadir un nuevo dato? 1-Si / 0-No ")) == 1
